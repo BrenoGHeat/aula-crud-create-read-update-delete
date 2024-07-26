@@ -8,7 +8,7 @@ export const PostCreateForm = () => {
     const { postCreate } = useContext(PostContext);
 
     const submit = (formData) => {
-        postCreate(formData);
+        postCreate.mutate(formData);
     }
 
     return(

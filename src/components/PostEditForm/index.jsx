@@ -14,7 +14,7 @@ export const PostEditForm = () => {
   });
 
   const submit = (formData) => {
-      postUpdate(formData);
+      postUpdate.mutate(formData);
   };
 
   return (
